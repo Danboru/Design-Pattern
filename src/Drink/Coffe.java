@@ -5,24 +5,20 @@
  */
 package Drink;
 
-import Items.Drink;
-
 /**
  *
  * @author Danboru
  */
-public class Coke extends Drink{
-
-    @Override
+public class Coffe extends Items.Drink{
+    
+     @Override
     public float price() {
-        return 50.0f;
+        return 30.0f;
     }
 
     @Override
     public String name() {
-        return "Coke Drink";
+        return "Coffe Drink";
     }
-
-    
     
 }

@@ -6,7 +6,7 @@ import Builder.Packing;
  *
  * @author Danboru
  */
-public class ColdDrink implements Builder.Items{
+public class Drink implements Builder.Items{
 
     @Override
     public String name() {

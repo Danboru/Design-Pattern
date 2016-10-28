@@ -3,26 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Drink;
+package Wrapper.Minumman;
 
-import Items.Drink;
+import Builder.Packing;
 
 /**
  *
  * @author Danboru
  */
-public class Coke extends Drink{
+public class Gelas implements Packing{
 
     @Override
-    public float price() {
-        return 50.0f;
-    }
-
-    @Override
-    public String name() {
-        return "Coke Drink";
-    }
-
+    public String Pack() {
     
+        return "Gelas";        
+    }
     
 }

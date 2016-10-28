@@ -5,13 +5,13 @@
  */
 package Drink;
 
-import Items.ColdDrink;
+import Items.Drink;
 
 /**
  *
  * @author Danboru
  */
-public class Pepsi extends ColdDrink{
+public class Pepsi extends Drink{
 
     @Override
     public float price() {
