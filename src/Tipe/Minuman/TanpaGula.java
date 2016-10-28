@@ -3,15 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Builder;
+package Tipe.Minuman;
+
+import Builder.Type;
 
 /**
  *
  * @author Danboru
  */
-public interface Packing {
+public class TanpaGula implements Type{
+
+    @Override
+    public String Type() {
     
-    public String Pack();
-  
+        return "Tanpa Gula";
+    
+    }
     
 }

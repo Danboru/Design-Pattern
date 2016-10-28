@@ -12,7 +12,9 @@ package Builder;
 public class MealBuilder {
     
     public Meal.Meal prepareVegMeal (){
+        
       Meal.Meal meal = new Meal.Meal();
+      
       meal.addItem(new Food.VergBurger());
       meal.addItem(new Drink.Coke());
       
@@ -22,8 +24,10 @@ public class MealBuilder {
    public Meal.Meal prepareNonVegMeal (){
        
       Meal.Meal meal = new Meal.Meal();
+      
       meal.addItem(new Food.ChikenBurger());
       meal.addItem(new Drink.Pepsi());
+      
       return meal;
    }
     

@@ -6,6 +6,7 @@
 package Items;
 
 import Builder.Packing;
+import Builder.Type;
 
 /**
  *
@@ -32,6 +33,11 @@ public class Nasi implements Builder.Items{
     
         return 0;
     
+    }
+
+    @Override
+    public Type type() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

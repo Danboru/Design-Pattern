@@ -9,9 +9,8 @@ package Builder;
  *
  * @author Danboru
  */
-public interface Packing {
+public interface Type {
     
-    public String Pack();
-  
+    public String Type();
     
 }

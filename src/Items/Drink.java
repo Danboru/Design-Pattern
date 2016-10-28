@@ -1,6 +1,7 @@
 package Items;
 
 import Builder.Packing;
+import Builder.Type;
 
 /**
  *
@@ -26,6 +27,13 @@ public class Drink implements Builder.Items{
     public float price() {
     
         return 0;
+    
+    }
+
+    @Override
+    public Type type() {
+    
+        return new Tipe.Minuman.TanpaGula();
     
     }
     

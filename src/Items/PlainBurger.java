@@ -1,23 +1,31 @@
 package Items;
 
 import Builder.Packing;
+import Builder.Type;
 
 /**
  *
  * @author Danboru
  */
-public class Burger implements Builder.Items{
+public class PlainBurger implements Builder.Items{
 
     @Override
     public String name() {
     
-        return "Burger";    
+        return "Plain Burger";    
     }
 
     @Override
     public Packing packing() {
     
         return new Wrapper.Makanan.Wrapper();
+    
+    }
+    
+       @Override
+    public Type type() {
+    
+        return new Tipe.BurgerType.Plain();
     
     }
 
@@ -27,5 +35,5 @@ public class Burger implements Builder.Items{
         return 0;
     
     }
-    
+ 
 }

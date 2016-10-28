@@ -3,28 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Drink;
-
-import Items.Drink;
+package Food;
 
 /**
  *
  * @author Danboru
  */
-public class Pepsi extends Drink{
+public class BurgerBesar extends Items.RegularBurger{
 
     @Override
     public float price() {
-        return 40.0f;
+        return 70.0f;
     }
 
     @Override
     public String name() {
-        return "Pepsi";
-    }
-    
-    
-    
-    
-    
+        return "Burger Besar";
+    }   
+     
 }

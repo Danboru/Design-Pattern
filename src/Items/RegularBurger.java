@@ -12,19 +12,26 @@ import Builder.Type;
  *
  * @author Danboru
  */
-public class Chiken implements Builder.Items{
+public class RegularBurger implements Builder.Items{
 
     @Override
     public String name() {
     
-        return "Chiken";
+        return "Regular Burger";
     
     }
 
     @Override
     public Packing packing() {
-        
-        return new Wrapper.Makanan.Wrapper();
+    
+        return new Wrapper.Makanan.PiringKertas();
+    
+    }
+
+    @Override
+    public Type type() {
+    
+        return new Tipe.BurgerType.Regular();
     
     }
 
@@ -33,11 +40,6 @@ public class Chiken implements Builder.Items{
     
         return 0;
     
-    }
-
-    @Override
-    public Type type() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

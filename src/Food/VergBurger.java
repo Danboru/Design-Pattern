@@ -1,17 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Food;
 
-import Items.Burger;
+import Items.RegularBurger;
 
 /**
  *
  * @author Danboru
  */
-public class VergBurger extends Burger{
+public class VergBurger extends RegularBurger{
 
     @Override
     public float price() {
