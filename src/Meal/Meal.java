@@ -37,10 +37,14 @@ public class Meal {
     public void showItems(){
    
       for (Builder.Items item : items) {
-         System.out.print("Item : " + item.name());
-         System.out.print(", Packing : " + item.packing().Pack());
-         System.out.println(", Type : " + item.type().Type());
-         System.out.println(", Price : " + item.price());
+          
+         System.out.println("========== PEMESANANSANAN =========="); 
+         System.out.println("Item : " + item.name());
+         System.out.println("Packing : " + item.packing().Pack());
+         System.out.println("Type : " + item.type().Type());
+         System.out.println("Price : " + item.price());
+         System.out.println("====================================");
+         
       }	
     }
     

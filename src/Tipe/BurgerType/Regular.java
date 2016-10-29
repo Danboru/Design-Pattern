@@ -11,7 +11,7 @@ public class Regular implements Type{
     @Override
     public String Type() {
     
-        return "Type Regular";
+        return "Regular";
     
     }
     

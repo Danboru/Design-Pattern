@@ -26,14 +26,17 @@ public class ActivityMain {
         Builder.MealBuilder mealBuilder = new Builder.MealBuilder();
 
         Meal.Meal vegMeal = mealBuilder.prepareVegMeal();
-        System.out.println("Veg Meal");
+        Meal.Meal nonVegMeal = mealBuilder.prepareNonVegMeal();
+        
         vegMeal.showItems();
         System.out.println("Total Cost: " + vegMeal.getCost());
-
-        Meal.Meal nonVegMeal = mealBuilder.prepareNonVegMeal();
-        System.out.println("\n\nNon-Veg Meal");
+        System.out.println("====================================");
+        
+        System.out.println("\n\n");
+        
         nonVegMeal.showItems();
         System.out.println("Total Cost: " + nonVegMeal.getCost());
+        System.out.println("====================================");
 
     }
 
