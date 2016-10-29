@@ -3,26 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Drink;
+package Tipe.Minuman;
 
 /**
  *
  * @author Danboru
  */
-public class Sprite extends Items.Sprite{
+public class Original implements Builder.Type {
 
     @Override
-    public float price() {
-        return 30.0f;
+    public String Type() {
+
+        return "Original";
+
     }
 
-    @Override
-    public String name() {
-        
-        return "Sprite";
-        
-    }
-    
-    
-    
 }

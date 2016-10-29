@@ -9,18 +9,17 @@ package Drink;
  *
  * @author Danboru
  */
-public class Sprite extends Items.Sprite{
+public class CokeDiet extends Items.DietCoke {
 
     @Override
     public float price() {
-        return 30.0f;
+       
+        return 50.0f;
     }
 
     @Override
     public String name() {
-        
-        return "Sprite";
-        
+         return "Coke";
     }
     
     

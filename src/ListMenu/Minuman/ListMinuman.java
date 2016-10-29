@@ -12,8 +12,7 @@ public class ListMinuman implements Builder.Listnya{
         System.out.println("4. Kopi dengan Gula");
         System.out.println("5. Kopi tanpa Gula");
         System.out.println("6. Teh dengan Gula");
-        System.out.println("7. Teh tanpa Gula");
-        
+        System.out.println("7. Teh tanpa Gula"); 
     
     }
     

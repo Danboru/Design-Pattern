@@ -3,26 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Drink;
+package Food;
 
 /**
  *
  * @author Danboru
  */
-public class Sprite extends Items.Sprite{
+public class ChikenOriginal extends Items.Original{
 
     @Override
     public float price() {
-        return 30.0f;
+        return 70.0f;
     }
 
     @Override
     public String name() {
-        
-        return "Sprite";
-        
-    }
-    
-    
-    
+        return "Chiken";
+    }   
+     
 }

@@ -9,20 +9,16 @@ package Drink;
  *
  * @author Danboru
  */
-public class Sprite extends Items.Sprite{
+public class TehTanpaGula extends Items.TanpaGula{
 
     @Override
     public float price() {
-        return 30.0f;
+        return 40.0f;
     }
 
     @Override
     public String name() {
-        
-        return "Sprite";
-        
+        return "Teh";
     }
-    
-    
-    
+
 }
