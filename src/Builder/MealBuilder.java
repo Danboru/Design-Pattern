@@ -9,26 +9,34 @@ package Builder;
  *
  * @author Danboru
  */
-public class MealBuilder {
+public class MealBuilder{
     
-    public Meal.Meal prepareVegMeal (){
+    public Meal.Meal prepareItem (String makanan, String minuman){
         
       Meal.Meal meal = new Meal.Meal();
+      //Desicion makanan
+      if(makanan.equalsIgnoreCase("1")){
+          
+          meal.addItem(new Food.VergBurger());
       
-      meal.addItem(new Food.VergBurger());
-      meal.addItem(new Drink.Coke());
+      }
+      if(makanan.equalsIgnoreCase("2")){
       
+          meal.addItem(new Food.ChikenBurger());
+      
+      }
+      
+      
+      //Desicin Minuman
+      if(minuman.equalsIgnoreCase("1")){
+      
+          meal.addItem(new Drink.Coke());
+      
+      }
+      
+      //Return semua data ke dalam List<Item>
       return meal;
    }   
 
-   public Meal.Meal prepareNonVegMeal (){
-       
-      Meal.Meal meal = new Meal.Meal();
-      
-      meal.addItem(new Food.ChikenBurger());
-      meal.addItem(new Drink.Pepsi());
-      
-      return meal;
-   }
     
 }
