@@ -12,31 +12,31 @@ import Builder.Type;
  *
  * @author Danboru
  */
-public class Chiken implements Builder.Items{
+public class ChikenOriginal implements Builder.Items{
 
     @Override
     public String name() {
     
-        return "Chiken";
+        return "Chiken Original";
     
     }
 
     @Override
     public Packing packing() {
-        
-        return new Wrapper.Makanan.Wrapper();
     
-    }
-
-    @Override
-    public float price() {
-    
-        return 0;
+       return new Wrapper.Makanan.Wrapper();
     
     }
 
     @Override
     public Type type() {
+    
+        return null;
+    
+    }
+
+    @Override
+    public float price() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
