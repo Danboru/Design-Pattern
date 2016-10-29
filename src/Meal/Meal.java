@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Meal;
 
 import java.util.ArrayList;
@@ -14,6 +9,13 @@ import java.util.List;
  */
 public class Meal {
     
+    //Instance untuk singleton
+    private static Meal instance = new Meal();
+    
+    //private constructor
+    private Meal(){
+    
+    };
     
     private List<Builder.Items> items = new ArrayList<Builder.Items>();
     
@@ -23,12 +25,13 @@ public class Meal {
     
     }
     
+    //Data di ambil dari Item.price()
     public float getCost(){
     
         float cost = 00.0f;
         
         for (Builder.Items item : items) {
-         cost += item.price();
+         cost += item.price();//package Food & Drink
       }		
       return cost;
     
@@ -47,6 +50,13 @@ public class Meal {
          System.out.println("====================================");
          
       }	
+    }
+    
+    //Mengakses private constructor yang di inisialisasi di instance
+    public static Meal getInstance(){
+    
+        return instance;
+    
     }
     
 }

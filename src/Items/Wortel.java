@@ -17,7 +17,7 @@ public class Wortel implements Builder.Items{
     @Override
     public String name() {
     
-        return "Soup Wortel";
+        return "Wortel";//Data akan di set ulang di class Child
     
     }
 
@@ -38,7 +38,7 @@ public class Wortel implements Builder.Items{
     @Override
     public float price() {
     
-        return 0;
+        return 0;//Data akan di set ulang di class Child
     
     }
     

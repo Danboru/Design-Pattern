@@ -11,6 +11,7 @@ package Builder;
  */
 public interface Type {
     
+    //Implementasi di Tipe Package
     public String Type();
     
 }

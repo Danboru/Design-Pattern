@@ -12,7 +12,7 @@ public class DietCoke implements Builder.Items{
     @Override
     public String name() {
     
-        return "DietCoke";
+        return "DietCoke";//Data akan di set ulang di class Child
     
     }
 
@@ -33,7 +33,7 @@ public class DietCoke implements Builder.Items{
     @Override
     public float price() {
     
-        return 0;
+        return 0;//Data akan di set ulang di class Child
     
     }
     

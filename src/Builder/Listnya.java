@@ -6,6 +6,7 @@ package Builder;
  */
 public interface Listnya {
     
+    //Implementasi di Listmenu
     public void DaftarList();
     
 }

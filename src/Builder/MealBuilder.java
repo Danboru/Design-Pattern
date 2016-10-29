@@ -1,14 +1,19 @@
 package Builder;
 
+import Meal.Meal;
+
 /**
  *
  * @author Danboru
  */
 public class MealBuilder {
 
-    public Meal.Meal prepareItem(String makanan, String minuman) {
-
-        Meal.Meal meal = new Meal.Meal();
+    public Meal prepareItem(String makanan, String minuman) {
+        
+        //Singleton Object
+        Meal meal = Meal.getInstance();
+        
+        
         //Desicion Makanan
         switch (makanan) {
 

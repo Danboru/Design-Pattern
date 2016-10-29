@@ -11,6 +11,7 @@ package Builder;
  */
 public interface Packing {
     
+    //Implementasi di Wrapper Package
     public String Pack();
   
     

@@ -17,7 +17,7 @@ public class Large implements Builder.Items{
     @Override
     public String name() {
     
-        return "Nasi Large";
+        return "Large";//Data akan di set ulang di class Child
     
     }
 
@@ -31,7 +31,7 @@ public class Large implements Builder.Items{
     @Override
     public float price() {
     
-        return 0;
+        return 0;//Data akan di set ulang di class Child
     
     }
 

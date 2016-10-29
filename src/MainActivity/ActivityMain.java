@@ -14,6 +14,7 @@ package MainActivity;
 
 import ListMenu.Makanan.ListMakanan;
 import ListMenu.Minuman.ListMinuman;
+import Meal.Meal;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
@@ -23,9 +24,6 @@ import java.io.InputStreamReader;
  */
 public class ActivityMain {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
 
         //Jika igin meng-edit data edit di Builder.MealBuilder
@@ -45,7 +43,8 @@ public class ActivityMain {
             inputanMakanan = buffer.readLine();
 
         } catch (Exception e) {
-
+            
+            System.err.println("Log : Kesalahan dalam penulisan data");
             e.printStackTrace();
 
         }
@@ -71,9 +70,10 @@ public class ActivityMain {
         //Make Object
         Builder.MealBuilder mealBuilder = new Builder.MealBuilder();
 
-        Meal.Meal itemnya = mealBuilder.prepareItem(inputanMakanan.toString(), inputanMinuman.toString());
+        Meal itemnya = mealBuilder.prepareItem(inputanMakanan.toString(), inputanMinuman.toString());
 
         System.out.println("\n");
+        
         //Sow all item from List<Items>
         itemnya.showItems();
 

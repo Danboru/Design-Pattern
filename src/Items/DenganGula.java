@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Items;
 
 import Builder.Packing;
@@ -13,11 +8,11 @@ import Builder.Type;
  * @author Danboru
  */
 public class DenganGula implements Builder.Items{
-
+    
     @Override
     public String name() {
     
-        return "Kopi Dengan Gula";
+        return "Dengan Gula";//Data akan di set ulang di CLass Child
     
     }
 
@@ -38,7 +33,7 @@ public class DenganGula implements Builder.Items{
     @Override
     public float price() {
     
-        return 0;
+        return 0;//Data akan di set ulang di class Child
     
     }
     

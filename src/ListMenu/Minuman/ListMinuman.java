@@ -5,6 +5,7 @@ public class ListMinuman implements Builder.Listnya{
     @Override
     public void DaftarList() {
         
+        //List menu Minuman
         System.out.println("List Minuman");
         System.out.println("1. Coke Regular");
         System.out.println("2. Coke Diet");

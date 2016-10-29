@@ -4,7 +4,8 @@ public class ListMakanan implements Builder.Listnya {
 
     @Override
     public void DaftarList() {
-
+        
+        //List menu makanan
         System.out.println("List Makanan");
         System.out.println("1. Chiken Crispy");
         System.out.println("2. Chiken Original");

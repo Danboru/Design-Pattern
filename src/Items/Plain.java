@@ -12,7 +12,7 @@ public class Plain implements Builder.Items{
     @Override
     public String name() {
     
-        return "Plain";
+        return "Plain";//Data akan di set ulang di class Child
     
     }
 
@@ -33,7 +33,7 @@ public class Plain implements Builder.Items{
     @Override
     public float price() {
     
-        return 0;
+        return 0;//Data akan di set ulang di class Child
     
     }
     

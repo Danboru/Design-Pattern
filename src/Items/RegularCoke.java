@@ -12,7 +12,7 @@ public class RegularCoke implements Builder.Items{
     @Override
     public String name() {
     
-        return "RegularCoke";
+        return "RegularCoke";//Data akan di set ulang di class Child
     
     }
 
@@ -26,7 +26,7 @@ public class RegularCoke implements Builder.Items{
     @Override
     public float price() {
     
-        return 0;
+        return 0;//Data akan di set ulang di class Child
     
     }
 
